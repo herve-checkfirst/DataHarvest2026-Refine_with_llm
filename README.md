@@ -26,7 +26,6 @@ This repo bundles everything needed to reproduce the live demo and to extend it 
 | [03-transform-factual-incident.md](03-transform-factual-incident.md) | Intermediate — Distinguish concrete events from subjective opinion. Useful as a pre-filter for downstream extractions |
 | [04-transform-primary-complaint.md](04-transform-primary-complaint.md) | Intermediate — Classify the dominant complaint into a fixed eleven-label vocabulary |
 | [05-transform-aspect-sentiment.md](05-transform-aspect-sentiment.md) | Advanced — Four parallel sentiment columns (seat, crew, food, punctuality) per review |
-| [Airline_review.csv](Airline_review.csv) | Full dataset (23,171 reviews, 20 MB) |
 | [Airline_review_sample100.csv](Airline_review_sample100.csv) | 100 random reviews for fast iteration during prompt tuning |
 | [slides/](slides/) | Conference presentation in PDF |
 
