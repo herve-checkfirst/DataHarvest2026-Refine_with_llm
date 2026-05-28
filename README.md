@@ -11,7 +11,7 @@ Companion repository for the Dataharvest 2026 session **Beyond data cleaning: En
 This repo bundles everything needed to reproduce the live demo and to extend it after the session:
 
 - An installation tutorial for running OpenRefine with a local LLM via Ollama, on macOS, Linux, and Windows
-- Six transformation worksheets graded from basic to advanced, each one a self-contained recipe for a real data-cleaning task
+- Seven transformation worksheets graded from basic to advanced, each one a self-contained recipe for a real data-cleaning task
 - The sample dataset used throughout the demo and a 100-row excerpt for fast iteration
 - A `slides/` directory containing the conference presentation in PDF
 
@@ -26,6 +26,7 @@ This repo bundles everything needed to reproduce the live demo and to extend it 
 | [03-transform-factual-incident.md](03-transform-factual-incident.md) | Intermediate — Distinguish concrete events from subjective opinion. Useful as a pre-filter for downstream extractions |
 | [04-transform-primary-complaint.md](04-transform-primary-complaint.md) | Intermediate — Classify the dominant complaint into a fixed eleven-label vocabulary |
 | [05-transform-aspect-sentiment.md](05-transform-aspect-sentiment.md) | Advanced — Four parallel sentiment columns (seat, crew, food, punctuality) per review |
+| [06-transform-aircraft-reconciliation.md](06-transform-aircraft-reconciliation.md) | Advanced — Smart disambiguation: reconcile messy aircraft labels into a canonical family vocabulary |
 | [Airline_review_sample100.csv](Airline_review_sample100.csv) | 100 random reviews for fast iteration during prompt tuning |
 | [slides/](slides/) | Conference presentation in PDF |
 
@@ -62,7 +63,7 @@ If you adapt these prompts to your own data, keep the same discipline: pin the m
 1. Install OpenRefine 3.8.7 or later from [openrefine.org/download](https://openrefine.org/download).
 2. Follow [openrefine-llm-tutorial.md](openrefine-llm-tutorial.md) to install Ollama, pull the Ministral 3B model, and configure the AI Extension.
 3. Open `Airline_review_sample100.csv` in OpenRefine.
-4. Work through the transformation worksheets in order (`00` to `05`), running each prompt on the sample and comparing the output against the documented expectations.
+4. Work through the transformation worksheets in order (`00` to `06`), running each prompt on the sample and comparing the output against the documented expectations.
 5. Once a prompt produces stable output on the sample, optionally run it on the full `Airline_review.csv` — expect runtime in the range of several hours per pass on a CPU-only machine.
 
 ## License and credits
