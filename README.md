@@ -22,18 +22,18 @@ This repo bundles everything needed to reproduce the live demo and to extend it 
 | [openrefine-llm-tutorial.md](openrefine-llm-tutorial.md) | Step-by-step setup for OpenRefine + Ollama + Ministral 3B, including hardware requirements for Apple Silicon and Linux/Windows machines |
 | [00-transform-review-date.md](00-transform-review-date.md) | Basic — Date normalization to ISO 8601. Baseline that shows when GREL beats an LLM |
 | [01-transform-flight-type.md](01-transform-flight-type.md) | Basic — Binary classification: direct versus connecting flights |
-| [02-transform-route-extraction.md](02-transform-route-extraction.md) | Advanced — Parse free-text routes, resolve IATA codes, emit structured multi-segment output |
-| [03-transform-factual-incident.md](03-transform-factual-incident.md) | Intermediate — Distinguish concrete events from subjective opinion. Useful as a pre-filter for downstream extractions |
-| [04-transform-primary-complaint.md](04-transform-primary-complaint.md) | Intermediate — Classify the dominant complaint into a fixed eleven-label vocabulary |
-| [05-transform-aspect-sentiment.md](05-transform-aspect-sentiment.md) | Advanced — Four parallel sentiment columns (seat, crew, food, punctuality) per review |
-| [06-transform-aircraft-reconciliation.md](06-transform-aircraft-reconciliation.md) | Advanced — Smart disambiguation: reconcile messy aircraft labels into a canonical family vocabulary |
-| [07-transform-route-region.md](07-transform-route-region.md) | Intermediate — Map routes to canonical regional categories (Transatlantic, Intra-Europe, Middle East hub...) |
-| [08-transform-review-authenticity.md](08-transform-review-authenticity.md) | Advanced — Flag reviews by surface authenticity pattern (specific vs generic, positive vs negative). Investigation use only |
-| [09-transform-incident-extraction.md](09-transform-incident-extraction.md) | Advanced — Chained extraction: incident type, location, severity. Demonstrates the filter-then-extract composition pattern (run after 03) |
-| [10-transform-discrimination-signal.md](10-transform-discrimination-signal.md) | Advanced — Flag reviews reporting perceived discriminatory treatment. Investigation use only, editorial guardrails included |
-| [11-transform-review-language.md](11-transform-review-language.md) | Intermediate — Detect review language (ISO 639-1) and produce a one-sentence English summary for multilingual analysis |
-| [12-transform-compensation-outcome.md](12-transform-compensation-outcome.md) | Intermediate — Classify how the airline handled remediation: refund, voucher, upgrade, denial, proactive offer |
-| [13-transform-physical-harm.md](13-transform-physical-harm.md) | Advanced — Flag reports of physical illness or injury (discomfort, minor, serious, witnessed). Pairs with 09 for safety research |
+| [02-transform-factual-incident.md](02-transform-factual-incident.md) | Intermediate — Distinguish concrete events from subjective opinion. Useful as a pre-filter for downstream extractions |
+| [03-transform-review-language.md](03-transform-review-language.md) | Intermediate — Detect review language (ISO 639-1) and produce a one-sentence English summary for multilingual analysis |
+| [04-transform-compensation-outcome.md](04-transform-compensation-outcome.md) | Intermediate — Classify how the airline handled remediation: refund, voucher, upgrade, denial, proactive offer |
+| [05-transform-route-region.md](05-transform-route-region.md) | Intermediate — Map routes to canonical regional categories (Transatlantic, Intra-Europe, Middle East hub...) |
+| [06-transform-primary-complaint.md](06-transform-primary-complaint.md) | Intermediate — Classify the dominant complaint into a fixed eleven-label vocabulary |
+| [07-transform-aircraft-reconciliation.md](07-transform-aircraft-reconciliation.md) | Advanced — Smart disambiguation: reconcile messy aircraft labels into a canonical family vocabulary |
+| [08-transform-route-extraction.md](08-transform-route-extraction.md) | Advanced — Parse free-text routes, resolve IATA codes, emit structured multi-segment output |
+| [09-transform-aspect-sentiment.md](09-transform-aspect-sentiment.md) | Advanced — Four parallel sentiment columns (seat, crew, food, punctuality) per review |
+| [10-transform-incident-extraction.md](10-transform-incident-extraction.md) | Advanced — Chained extraction: incident type, location, severity. Demonstrates the filter-then-extract composition pattern (run after 02) |
+| [11-transform-physical-harm.md](11-transform-physical-harm.md) | Advanced — Flag reports of physical illness or injury (discomfort, minor, serious, witnessed). Pairs with 10 for safety research |
+| [12-transform-discrimination-signal.md](12-transform-discrimination-signal.md) | Advanced — Flag reviews reporting perceived discriminatory treatment. Investigation use only, editorial guardrails included |
+| [13-transform-review-authenticity.md](13-transform-review-authenticity.md) | Advanced — Flag reviews by surface authenticity pattern (specific vs generic, positive vs negative). Investigation use only |
 | [Airline_review_sample100.csv](Airline_review_sample100.csv) | 100 random reviews for fast iteration during prompt tuning |
 | [slides/](slides/) | Conference presentation in PDF |
 
