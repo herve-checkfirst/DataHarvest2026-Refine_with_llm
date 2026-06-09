@@ -21,6 +21,7 @@ Ministral 3B in its default 4-bit quantization weighs around 2 GB on disk and ne
 **Disk space.** Reserve at least 5 GB free: 2 GB for the model, plus space for Ollama's cache and OpenRefine workspace.
 
 **If your machine falls short.** Drop to a smaller quantization (`Q3_K_M` saves around 500 MB of RAM at modest quality cost) or run shorter prompts. If you cannot meet the memory floor at all, point the AI Extension at a cloud-hosted OpenAI-compatible endpoint instead — the rest of the setup is identical.
+But be careful with sensitive datasets...
 
 ## 1. Install Ollama
 

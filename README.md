@@ -11,7 +11,7 @@ Companion repository for the Dataharvest 2026 session **Beyond data cleaning: En
 This repo bundles everything needed to reproduce the live demo and to extend it after the session:
 
 - An installation tutorial for running OpenRefine with a local LLM via Ollama, on macOS, Linux, and Windows
-- Fourteen transformation worksheets graded from basic to advanced, each one a self-contained recipe for a real data-cleaning task
+- Fifteen transformation worksheets graded from basic to advanced, each one a self-contained recipe for a real data-cleaning task
 - The sample dataset used throughout the demo and a 100-row excerpt for fast iteration
 - A `slides/` directory containing the conference presentation in PDF
 
@@ -34,6 +34,7 @@ This repo bundles everything needed to reproduce the live demo and to extend it 
 | [11-transform-physical-harm.md](11-transform-physical-harm.md) | Advanced — Flag reports of physical illness or injury (discomfort, minor, serious, witnessed). Pairs with 10 for safety research |
 | [12-transform-discrimination-signal.md](12-transform-discrimination-signal.md) | Advanced — Flag reviews reporting perceived discriminatory treatment. Investigation use only, editorial guardrails included |
 | [13-transform-review-authenticity.md](13-transform-review-authenticity.md) | Advanced — Flag reviews by surface authenticity pattern (specific vs generic, positive vs negative). Investigation use only |
+| [14-transform-named-entities.md](14-transform-named-entities.md) | Advanced — Open-ended JSON entity extraction: airlines, airports, cities, aircraft, dates from the review text |
 | [Airline_review_sample100.csv](Airline_review_sample100.csv) | 100 random reviews for fast iteration during prompt tuning |
 | [slides/](slides/) | Conference presentation in PDF |
 
@@ -70,7 +71,7 @@ If you adapt these prompts to your own data, keep the same discipline: pin the m
 1. Install OpenRefine 3.8.7 or later from [openrefine.org/download](https://openrefine.org/download).
 2. Follow [openrefine-llm-tutorial.md](openrefine-llm-tutorial.md) to install Ollama, pull the Ministral 3B model, and configure the AI Extension.
 3. Open `Airline_review_sample100.csv` in OpenRefine.
-4. Work through the transformation worksheets in order (`00` to `13`), running each prompt on the sample and comparing the output against the documented expectations.
+4. Work through the transformation worksheets in order (`00` to `14`), running each prompt on the sample and comparing the output against the documented expectations.
 5. Once a prompt produces stable output on the sample, optionally run it on the full `Airline_review.csv` — expect runtime in the range of several hours per pass on a CPU-only machine.
 
 ## License and credits
